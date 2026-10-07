@@ -15,7 +15,7 @@ Convert it to 'owner/name' format before calling any tool.
 
 Explore the repo yourself:
 1. Call get_repo_info and list_files on the root folder.
-2. Read the README and 3-6 important files (entry points, config, core logic). Never read more than 6 files.
+2. Read the README and 3-10 important files (entry points, config, core logic). Never read more than 10 files.
 3. Call get_commits and get_open_issues.
 
 Then write the final report in Markdown with these sections:
