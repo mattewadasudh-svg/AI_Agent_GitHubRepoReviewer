@@ -7,7 +7,7 @@ def get_text(content):
     return "".join(block.get("text", "") for block in content if isinstance(block, dict))
   return content
 
-st.title("🔍 GitHub Repo Reviewer Agent")
+st.title("GitHub Repo Reviewer Agent")
 st.caption("Paste a public GitHub repo. The agent explores it on its own and writes a review.")
 
 url = st.text_input("GitHub repo URL", placeholder="https://github.com/owner/repo")
@@ -23,7 +23,7 @@ if st.button("Review repo") and url:
 
       if msg.type == "ai" and msg.tool_calls:
         for call in msg.tool_calls:
-          steps.write(f"🛠️ `{call['name']}` {call['args']}")
+          steps.write(f"--> `{call['name']}` {call['args']}")
       elif msg.type == "ai":
         report = get_text(msg.content)
 

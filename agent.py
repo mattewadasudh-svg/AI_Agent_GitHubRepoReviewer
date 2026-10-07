@@ -6,7 +6,7 @@ from tools import get_repo_info, list_files, read_file, get_commits, get_open_is
 load_dotenv()
 
 # Step 1: LLM (Google AI Studio, free tier)
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash-lite", temperature=0)
 
 # Step 2: Instructions for the agent
 system_prompt = """
